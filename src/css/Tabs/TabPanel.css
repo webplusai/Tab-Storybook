@@ -1,0 +1,5 @@
+.radix-TabsContent {
+  padding: 20px;
+  font-size: var(--font-size, 16px);
+  color: var(--color, #2d3748);
+}

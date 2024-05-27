@@ -1,0 +1,28 @@
+.radix-TabsTrigger {
+  flex: 1;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color, #4a5568);
+  background-color: var(--background-color, transparent);
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.radix-TabsTrigger[data-state="active"] {
+  border-color: var(--active-background-color, #3182ce);
+  color: var(--active-color, #3182ce);
+  background-color: var(--active-background-color, #edf2f7);
+}
+
+.radix-TabsTrigger:disabled {
+  cursor: not-allowed;
+  color: var(--disable-color, #cbd5e0);
+  background-color: var(--disable-background-color, #e2e8f0);
+  border-bottom: 2px solid transparent;
+}
